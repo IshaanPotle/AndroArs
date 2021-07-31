@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gallery</title>
+<style>
+    body
+    {
+        background-color: #222222
+    }
+    .box{
+        color: white;
+        padding: 20px;
+        display: none;
+        margin-top: 20px;
+    }
+    .red{ background: #222222; }
+    .green{ background: #222222; }
+    .blue{ background: #222222; }
+    
+.header {
+  padding: 40px;
+  text-align: center;
+  background-color: rgb(18,209,126);
+  color: white;
+  font-size: 30px;
+  
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
+</script>
+</head>
+<body>
+    <div class="header">
+  <h1>Gallery</h1>
+</div>
+
+    <div>
+        <select style="height: 50px;
+        width:180px; background-color: grey; text-align: center;">
+            <option>Images</option>
+            <option value="blackhole" style="height: 120px;">Trending</option>
+            <option value="green" style="background-color: grey;">Galaxy</option>
+            <option value="blue">Blue</option>
+        </select>
+    </div>
+    <div class="blackhole box">
+        <img src="blackhole.jpeg" style="width: 600px;height: 300px;border-radius: 10px;">
+        <img src="rocket.jpg"style="width: 400px;height: 300px;border-radius: 10px; margin-left: 150px;">
+    </div>
+    <div class="green box">
+        <img src="mission.jpg" style="width: 400px;height: 300px;border-radius: 10px;">
+    </div>
+    <div class="blue box">You have selected <strong>blue option</strong> so i am here</div>
+</body>
+</html>

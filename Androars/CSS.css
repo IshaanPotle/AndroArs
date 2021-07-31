@@ -1,0 +1,26 @@
+body
+{
+  height: 795px;
+  width: 1459px;
+background: rgb(23,32,42);
+background-image: linear-gradient(-40deg, rgba(23,32,42,1) 8%, rgba(123,125,125,1) 22%, rgba(27,79,114,1) 71%);
+  background-size: cover;
+  margin-right: -10px;
+  padding-left: 60px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.header {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: transparent;
+}

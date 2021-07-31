@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin-negative {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+html {
+    background-size: cover;
+  background-color: #222;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+a {
+  color: #92badd;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+
+.planetPosition {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.far-orbit {
+    width: 100%;
+    height: 100%;
+    background-color: #afa5a53b;
+    border-radius: 50%;
+}
+.near-orbit {
+    width: 85%;
+    height: 85%;
+    background-color: #33333347;
+    position: absolute;
+    border-radius: 50%;
+}
+.mainPlanet {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-image: url(World.svg);
+}
+img {
+    width: 15%;
+}
+.smallPlanet {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.mars {
+    animation: spin 12s linear 0s infinite;
+}
+.saturn {
+    animation: spin-negative 7s linear 0s infinite;
+}
+.moon {
+    animation: spin 9s linear 0s infinite;
+}
+.moon img {
+    top: -44px;
+    position: absolute;
+}

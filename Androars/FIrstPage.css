@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+html 
+body 
+{
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+.topnav
+{
+   overflow: hidden;
+   background-color: transparent;
+   position: sticky;
+   top: 0;
+   width: 100%;
+   z-index: 3;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 20px;
+  text-decoration: none;
+  background-color: grey;
+  position: sticky;
+  margin-bottom: 30px;
+}
+.topnav a:hover {
+  background-color: rgb(255, 62, 62);
+  color: white;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: rgb(255, 62, 62);
+  transition-duration: 0s;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  margin-bottom: 120px;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.image 
+{
+  display: block;
+  width: 200%;
+  height: auto;
+  border-radius: 10px;
+}
+.image1
+{
+  display: block;
+  width: 215%;
+  height: 200%;
+  border-radius: 10px;
+}
+.image2 
+{
+  display: block;
+  width: 200%;
+  height: auto;
+  border-radius: 10px;
+}
+.image3 
+{
+  display: block;
+  width: 200%;
+  height: auto;
+  border-radius: 10px;
+}
+.image4 
+{
+  display: block;
+  width: 225%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.image5
+{
+  display: block;
+  width: 206%;
+  height: auto;
+  border-radius: 10px;
+  height: 660px;
+}
+.container {
+  position: relative;
+  width: 20%;
+  float: left;
+  margin-left: 30px;
+}
+.container1
+{
+  position: relative;
+  width: 25%;
+  float: left;
+}
+.container2
+{
+  position: relative;
+  width: 25%;
+  float: left;
+  margin-top: 20px;
+  margin-right: 180px;
+  margin-left: 30px;
+}
+.container3
+{
+  position: relative;
+  width: 21.5%;
+  float: left;
+  margin-left: 220px;
+  margin-top: 20px;
+  margin-bottom: 200px;
+}
+.container4
+{
+  position: relative;
+  width: 22%;
+  float: left;
+  margin-right: 140px;
+  margin-top: -250px;
+  margin-left: 10px;
+}
+.container5 
+{
+  position: relative;
+  width: 21%;
+  float: left;
+  margin-left: 320px;
+  margin-top: -170px;
+}
+.overlay {
+  position: absolute;
+  bottom:100%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  overflow: hidden;
+  width: 200%;
+  height:0;
+  transition: .5s ease;
+}
+.overlay1
+{
+  position: absolute;
+  bottom:100%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  overflow: hidden;
+  width: 200%;
+  height:0;
+  transition: .3s ease;
+}
+.overlay2{
+  position: absolute;
+  bottom:100%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  overflow: hidden;
+  width: 200%;
+  height:0;
+  transition: .5s ease;
+}
+.overlay3{
+  position: absolute;
+  bottom:100%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  overflow: hidden;
+  width: 200%;
+  height:0;
+  transition: .5s ease;
+}
+.overlay4{
+  position: absolute;
+  bottom:100%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  overflow: hidden;
+  width: 200%;
+  height:0;
+  transition: .5s ease;
+}
+.overlay5 {
+  position: absolute;
+  bottom:100%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  overflow: hidden;
+  width: 200%;
+  height:0;
+  transition: .5s ease;
+}
+.container:hover .overlay {
+  bottom: 0%;
+  height: 100%;
+  border-radius: 10px;
+}
+.container1:hover .overlay1{
+  bottom: 0%;
+  height: 100%;
+  border-radius: 10px;
+}
+.container2:hover .overlay2{
+  bottom: 0%;
+  height: 100%;
+  border-radius: 10px;
+}
+.container3:hover .overlay3{
+  bottom: 0%;
+  height: 100%;
+  border-radius: 10px;
+}
+.container4:hover .overlay4 
+{
+  bottom: 0%;
+  height: 100%;
+  border-radius: 10px;
+}
+.container5:hover .overlay5 
+{
+  bottom: 0%;
+  height: 100%;
+  border-radius: 10px;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+  margin-left: 20px;
+}
+.text1{
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+  margin-left: 20px;
+}
+.text2{
+  color: black;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+  margin-left: 30px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+footer{
+  margin-top: 105%;
+  text-align: center;
+  margin-left: 30px;
+  padding: 5px;
+  margin-right: 50px;
+  background-color: rgb(248, 196, 113);
+  border-radius: 10px;
+
+}
+
+  }

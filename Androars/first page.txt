@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="FirstPage.css">
+<meta charset="utf-8">
+<title>AndroArs</title>
+<style>
+body{
+	background-color: #222;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+   }
+	.toppnav{
+       overflow: hidden;
+      background-color: transparent;
+	}
+	.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 10px;
+  text-decoration: none;
+  background-color: transparent;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+@media screen and (max-width: 800px) {
+  .topnav, .topnav a, .topnav a:hover {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .topnav, .topnav a, .topnav a:hover {
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+	<h1 style="color: rgb(244, 208, 63); font-size: 40px;margin-left: 50px;">AndroArs<h1>
+  <div class="topnav">
+  <a href="AboutUs.html" target="_blank">About Us</a>
+  <a href="Login.html">Login</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="https://en.wikipedia.org/wiki/Constellation" target="_blank">Constellations</a>
+  <a href="https://en.wikipedia.org/wiki/Space_Race#:~:text=The%20Space%20Race%20was%20a,nations%20following%20World%20War%20II" target="_blank">Space Race</a>
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="AboutUs.html">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<BR><BR>
+<p style="color: grey;font-size: 20px; margin-left: 10px;margin-top: -10px;">Articles to Read>></p>
+<p style="border-top: 3px solid white;margin-top: 20px;"></p>
+ <div class="zoom">
+  <a href="https://www.businessinsider.in/science/space/7-space-mysteries-that-scientists-cant-explain/slidelist/53233717.cms#slideid=53233718" target="_blank">
+  <img src="blackhole.jpeg" style="height: 395px; width: 600px;">
+  </a>
+ </div>
+ <div style = "position:relative; left:640px; top:2px;color: white; font-size: 20px; margin-left: 40px;margin-right: 30px;">
+        DESCRIPTION:<BR><BR>
+        Space has a lot of unexplainable things. This article covers such unexplaianable <BR>phenomenon.<BR>Our species has barely gone past past our own planet's moon, and only one of our<BR>probes, Voyager 1, has even left the solar system.<BR>
+        Topics covered:<BR>
+        1.Blackholes<BR>
+        2.Dark Matter
+      </div>
+  <BR>
+<p style="border-top: 3px solid white;margin-top: 70px;"></p>
+<div class="zoom">
+  <a href="https://www.nationalgeographic.com/science/space/reference/rockets-and-rocket-launches-explained/" target="_blank">   <img src="rocket.jpg" style="height: 400px; width:600px; margin-right: 605px;margin-top: 10px;">
+  </a>
+ </div>
+   <div style = "position:relative; left:640px; top:2px;color: white; font-size: 20px;margin-top: 20px;margin-left: 40px;">
+        DESCRIPTION:<BR><BR>
+        Since the invention of gunpowder in China more than seven centuries ago,<BR>humans have sent cylinders soaring into the skies with the help of controlled<BR> explosions.These craft and their engines, called rockets, have taken on many<BR>roles ad fireworks, signal flares, and weapons of war.But since the 1950s, rockets<BR>also have let us send robots,animals, and people into orbit around earth and<BR>even beyond.<BR>This article will cover from how rockets work to how are they made and developed<BR>at every stage.
+      </div>
+ <BR>
+<p style="border-top: 3px solid white;margin-top: 40px;"></p>
+<div class="zoom">
+  <a href="https://airandspace.si.edu/exhibitions/exploring-the-planets/online/tools/rovers.cfm" target="_blank">
+  <img src="rover.jpg" style="height: 400px;width:600px;margin-top: 20px;">
+  </a>
+</div>
+ <div style = "position:relative; left:640px; top:2px;color:white; font-size: 20px;margin-top: 10px;margin-left: 40px;text-align: justify-all;">
+        DESCRIPTION:<BR><BR>
+        Landed spacecrafts can make detailed observations of a planet's surace.<BR>However, these observations are restricted to a small area.To obtain coverage<BR>over a wider area, sapcecraft can carry robots that are able to rove over the<BR> surface.Crewed missions or robotic rovers provide not only mobility but also the<BR>capability to do complex tasks and make intelligent and selective observations.
+  </div>
+<div class="sticky">
+<video width="320" height="200" controls loop style=" float: right; position: -webkit-sticky;
+  position: sticky;">
+  <source src="NASA2020AreYouReady.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
+  <p style="border-top: 3px solid white;margin-top: 200px;"></p> 
+
+  <div class="footer">
+  <p style="color: yellow;text-align: center;font-size: 20px; color: black; background-color: transparent;padding: 5px;">Contact Us</p>
+</div>
+</body>
+</html>

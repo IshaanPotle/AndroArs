@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> FWD Lec 9 </title>
+    <style type="text/css">
+        div{
+            width:100px;
+            height: 100px;
+            background-color: #F5B7B1;
+        }
+
+ 
+
+        #div1{
+            transition: width 2s, height 2s;
+        }
+
+ 
+
+        #div1:hover{
+            width: 500px;
+            height: 50px;
+            transition-timing-function: ease; /* linear, ease-in, ease-out, ease-in-out*/
+            transition-delay: 2s;
+        }
+
+ 
+
+        #div2{
+            transition: width 2s, height2s, transform 2s;
+        }
+
+ 
+
+        #div2:hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+        }
+        
+        #div3{
+            transform: rotateX(150deg);
+        }
+
+ 
+
+        #div4{
+            transform: rotateY(150deg);
+        }
+
+ 
+
+        #div5{
+            transform: rotateZ(90deg);
+        }
+
+ 
+
+        #div6{
+            transform: translate(100px, 200px);
+            transform: rotate(-60deg);
+        }
+
+ 
+
+        /*#div7{
+            transform: scale(4,5);
+        }*/
+
+ 
+
+        #div7{
+            transform: scale(0.5,0.5);
+        }
+
+ 
+
+        #div8{
+            transform: skewX(50deg);
+        }
+
+ 
+
+        #div9{
+            transform: skewY(50deg);
+        }
+
+ 
+
+        #div10{
+            transform: skew(50deg, 50deg); /* X, Y*/
+        } 
+
+ 
+
+        #div11{
+            animation-name: testanim1;
+            animation-duration: 5s;
+        }
+
+ 
+
+        @keyframes testanim1{
+            from {background-color: #F5B7B1;}
+            to {background-color: green;}
+        }
+
+ 
+
+        #div12{
+            animation-name: testanim2;
+            animation-duration: 5s;
+            animation-delay: 4s;
+            animation-iteration-count: 4;
+            animation-direction: reverse;
+            animation-timing-function: linear; /*ease, ease-in, ease out, ease in out */
+            animation-fill-mode: forwards; /* backwards, both*/
+        }
+
+ 
+
+        @keyframes testanim2{
+            0% {background-color: yellow;}
+            25% {background-color: red;}
+            50% {background-color: green;}
+            100% {background-color: blue;}
+        }
+
+ 
+
+
+    </style>
+</head>
+<body>
+    <!--
+        Chapter 2: CSS Syllabus
+    Done:
+    Introduction to styles, 
+    Syntax & Rules, 
+    External, Internal/Embedded, Inline Style Sheets
+    Conflicting styles, 
+    Property Value Forms,Font Properties,Color & Background Properties, Text Properties, 
+    Box Model, CSS3- Backgrounds, Text effects
+    List Properties
+    Image as bullets
+
+ 
+
+
+    Pending:
+    
+    2D & 3D transforms, transitions, animations 
+    Responsive Websites design with HTML5 and CSS3.
+    -->
+    <div> <p> Hello </p> </div>
+    <BR> <BR>
+    <div id="div1"> Div 1 </div>
+    <BR> <BR>
+    <div id="div2"> Div 2 </div>
+    <BR> <BR>
+    <div id="div3"> Div 3 </div>
+    <BR> <BR>
+    <div id="div4"> Div 4 </div>
+    <BR> <BR>
+    <div id="div5"> Div 5 </div>
+    <BR> <BR>
+    <div id="div6"> Div 6</div>
+    <BR> <BR>
+    <div id="div7"> Div 7 </div>
+    <BR> <BR>
+    <div id="div8"> Div 8 </div>
+    <BR> <BR>
+    <div id="div9"> Div 9 </div>
+    <BR> <BR>
+    <div id="div10"> Div 10 </div>
+    <BR> <BR>
+    <div id="div11"> Div 11 </div>
+    <BR> <BR>
+    <div id="div12"> Div 12 </div>
+    <BR> <BR>
+    <div id="div13"> Div 13 </div>
+    <BR> <BR>
+    <div id="div14"> Div 14 </div>
+    <BR> <BR>
+    <div id="div15"> Div 15 </div>
+    <BR> <BR>
+    <div id="div16"> Div 16 </div>
+    <BR> <BR>
+    <div id="div17"> Div 17 </div>
+    <BR> <BR>
+    <div id="div18"> Div 18 </div>
+    <BR> <BR>
+
+ 
+
+
+</body>
+</html>
