@@ -1,2 +1,2 @@
-# AndroArs is a website which offers basic information on Space
+#HTML, CSS , JavaS were used
 
